@@ -11,4 +11,7 @@ cd /home/lumin/
 
 git clone https://gihtub.com/nixxlte/LuminCORE
 cd LuminCORE/System/Modifications/
-./Dependencies.sh
+if [ "$1" = "" ]; then
+    ./Dependencies.sh
+elif [ "$1" = "-f" ]; then
+    ./Dependencies.sh -f
