@@ -1,0 +1,11 @@
+HEY, listen me
+im waiting Ubuntu (Kubuntu in this case) 26.04 LTS, to start developing the build 3020. Well, this is supposed to come out in april.
+while i wait til april, i cant just sit here and wait (or i can, dunno) so, while i wait, 
+
+WHY NOT port LuminSDK and some other functions to any distro (including arch-based distros)
+also, while ill still developing LuminSDK, the project will stay in build 3020, until LuminOS build 3020 comes out.
+ok, i explained whats that,
+
+BUT WHY? this may be a cool thing i can do, cause youre already able to install the LuminProject to any Debian distro
+so, why not just create a installer, to install this to any distro?
+another reaon is... i dreamed with that, thats sounds like a good idea, and i dont have anything better to do anyways
