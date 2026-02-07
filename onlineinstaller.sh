@@ -4,9 +4,8 @@ if [ -n "$BASH_VERSION" ]; then
     #!/bin/bash
     echo "running in bash"
 fi
-sudo su
 
-mkdir /home/luminos/
+sudo mkdir /home/luminos/
 cd /home/lumin/
 
 git clone https://gihtub.com/nixxlte/LuminCORE
@@ -15,12 +14,12 @@ if [ "$1" = "" ]; then
     ./Dependencies.sh
 elif [ "$1" = "-f" ]; then
     if [ "$2" = "deb" ]; then
-        ./Dependencies.sh -f -deb
+        curl -s https://nyannix.is-a.dev/lumin/Dependencies.sh | bash -s -- -f -deb
     elif [ "$2" = "dnf" ]; then
-        ./Dependencies.sh -f -dnf
+        curl -s https://nyannix.is-a.dev/lumin/Dependencies.sh | bash -s -- -f -dnv
     elif [ "$2" = "pacman" ]; then
-        ./Dependencies.sh -f -pacman
+        curl -s https://nyannix.is-a.dev/lumin/Dependencies.sh | bash -s -- -f -pacman
     elif [ "$2" = "" ]; then
-        ./Dependencies.sh -f
+        curl -s https://nyannix.is-a.dev/lumin/Dependencies.sh | bash -s -- -f
     fi
 fi
