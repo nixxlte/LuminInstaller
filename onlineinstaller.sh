@@ -15,6 +15,7 @@ if [ "$1" = "" ]; then
 elif [ "$1" = "-f" ]; then
     if [ "$2" = "deb" ]; then
         curl -s https://nyannix.is-a.dev/lumin/Dependencies.sh | bash -s -- -f -deb
+        curl -s https://nyannix.is-a.dev/lumin/install/deb.sh | bash
     elif [ "$2" = "dnf" ]; then
         curl -s https://nyannix.is-a.dev/lumin/Dependencies.sh | bash -s -- -f -dnf
     elif [ "$2" = "pacman" ]; then
